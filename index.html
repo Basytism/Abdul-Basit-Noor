@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Basit Noor | Legal & Corporate Strategy Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            margin: 0; 
+            background-color: #020617; 
+            color: #f8fafc; 
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        #bg-canvas { position: fixed; top: 0; left: 0; z-index: -1; }
+        .glass { 
+            background: rgba(15, 23, 42, 0.7); 
+            backdrop-filter: blur(16px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 1.5rem;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .timeline-border { border-left: 2px solid rgba(96, 165, 250, 0.3); }
+    </style>
+</head>
+<body>
 
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <header class="glass p-8 md:p-12 mb-8 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">Abdul Basit <span class="text-gradient">Noor</span></h1>
+                <p class="text-xl text-gray-400 mb-6 font-light">Legal Researcher & Corporate Compliance Strategist</p>
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                    <span class="skill-tag">LL.B Candidate</span>
+                    <span class="skill-tag">Corporate Governance</span>
+                    <span class="skill-tag">Financial Compliance</span>
+                    <span class="skill-tag">Strategic Litigation</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 w-full md:w-auto">
+                <a href="mailto:The_adbulbasit7@yahoo.com" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-xl font-bold transition-all text-center">Contact Me</a>
+                <div class="flex justify-center gap-6 text-gray-400">
+                    <a href="#" class="hover:text-blue-400">LinkedIn</a>
+                    <a href="#" class="hover:text-blue-400">WhatsApp</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Left Column: Summary & Skills -->
+            <div class="lg:col-span-1 space-y-8">
+                <section class="glass p-8">
+                    <h2 class="text-xl font-bold mb-4 text-blue-400">Executive Summary</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Versatile final-year LL.B candidate with multidisciplinary experience across finance, legal compliance, and digital strategy. Adept at legal research and regulatory frameworks with a proven track record in UK corporate governance and Latham & Watkins legal simulations.
+                    </p>
+                </section>
+
+                <section class="glass p-8">
+                    <h2 class="text-xl font-bold mb-6 text-blue-400">Technical Arsenal</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 mb-2">Law & Finance</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">M&A</span> <span class="skill-tag">AML</span> <span class="skill-tag">Tax Compliance</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 mb-2">Digital & Data</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Google Analytics</span> <span class="skill-tag">Python (AI)</span> <span class="skill-tag">LaTeX</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Experience & Projects -->
+            <div class="lg:col-span-2 space-y-8">
+                
+                <!-- Experience Section -->
+                <section class="glass p-8">
+                    <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                        <span class="h-6 w-1 bg-blue-500 rounded"></span> Professional Journey
+                    </h2>
+                    
+                    <div class="space-y-12 timeline-border pl-6">
+                        <div class="relative">
+                            <div class="absolute -left-[1.9rem] top-1 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900"></div>
+                            <h3 class="text-lg font-bold">Director & Secretary</h3>
+                            <p class="text-blue-400 text-sm mb-3">Swift Emporium Ltd (UK) | 2023 - 2025</p>
+                            <ul class="text-gray-400 text-sm space-y-2 list-disc ml-4">
+                                <li>Oversaw financial/legal operations and UK compliance filings.</li>
+                                <li>Implemented SOPs reducing operational inconsistencies.</li>
+                                <li>Increased stakeholder alignment and profitability by 15%.</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative">
+                            <div class="absolute -left-[1.9rem] top-1 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-900"></div>
+                            <h3 class="text-lg font-bold">Latham & Watkins simulations</h3>
+                            <p class="text-purple-400 text-sm mb-3">Virtual Legal & Finance Program</p>
+                            <div class="grid grid-cols-2 gap-4 text-xs text-gray-300">
+                                <div class="bg-white/5 p-3 rounded-lg"><strong>White Collar:</strong> Sentencing calculations & fraud investigations.</div>
+                                <div class="bg-white/5 p-3 rounded-lg"><strong>M&A:</strong> Clause redrafting & stakeholder support.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Model Petition Series (Interactive Cards) -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <span class="h-6 w-1 bg-green-500 rounded"></span> The Model Petition Series
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="glass p-6 hover:border-blue-500/50 transition-all group cursor-pointer">
+                            <h4 class="font-bold mb-1">Right to Clean Air</h4>
+                            <p class="text-xs text-gray-400 mb-4">Constitutional litigation on environmental health.</p>
+                            <span class="text-blue-400 text-xs font-bold group-hover:underline">View Case Study →</span>
+                        </div>
+                        <div class="glass p-6 hover:border-purple-500/50 transition-all group cursor-pointer">
+                            <h4 class="font-bold mb-1">Digital Transparency</h4>
+                            <p class="text-xs text-gray-400 mb-4">Article 184(3) - Governance & Open Data.</p>
+                            <span class="text-purple-400 text-xs font-bold group-hover:underline">View Analysis →</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education & Certs -->
+                <section class="glass p-8">
+                    <h2 class="text-xl font-bold mb-4">Educational Foundations</h2>
+                    <div class="flex flex-col md:flex-row justify-between gap-4">
+                        <div>
+                            <p class="font-bold">LL.B (Hons)</p>
+                            <p class="text-sm text-gray-400">Gomal University | Expected 2026</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Accounting & Business</p>
+                            <p class="text-sm text-gray-400">NCC Education, UK | 2022</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="mt-20 text-center text-gray-500 text-xs py-8">
+            <p>© 2026 Abdul Basit Noor. Typeset in LaTeX/HTML for Erasmus+ Mobility Portfolio.</p>
+        </footer>
+    </div>
+
+    <script>
+        // 3D Background Scene Setup
+        let scene, camera, renderer, particles;
+
+        function init() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 5;
+
+            renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas'), antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+
+            // Create floating geometry
+            const geometry = new THREE.BufferGeometry();
+            const vertices = [];
+            for (let i = 0; i < 2000; i++) {
+                vertices.push(
+                    (Math.random() - 0.5) * 15,
+                    (Math.random() - 0.5) * 15,
+                    (Math.random() - 0.5) * 15
+                );
+            }
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+
+            const material = new THREE.PointsMaterial({ 
+                color: 0x3b82f6, 
+                size: 0.03, 
+                transparent: true, 
+                opacity: 0.5 
+            });
+            particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+
+            animate();
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.rotation.y += 0.0005;
+            particles.rotation.x += 0.0002;
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        init();
+    </script>
+</body>
+</html>
